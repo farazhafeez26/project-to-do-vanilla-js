@@ -4,11 +4,14 @@ var form = document.getElementById("form")
 var input = document.getElementById("todo-item")
 var todoList = document.getElementById("todo-list")
 
+// should be able to delete items 
+// should store items to local storage
+
 
 function showtodos() {
     // clean to do list
     todoList.innerHTML = ""
-    for (var i = 0; i <= todos.length; i++) {
+    for (var i = 0; i < todos.length; i++) {
         var todo = document.createElement("P")
         todo.innerText = todos[i]
         todoList.appendChild(todo)
